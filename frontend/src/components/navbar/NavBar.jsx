@@ -15,6 +15,7 @@ export const NavBar = () => {
             <li>Women</li>
             <li>Kids</li>
         </ul>
+        <div className="nav-login-cart"></div>
     </div>
   )
 }
