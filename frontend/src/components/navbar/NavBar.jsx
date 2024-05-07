@@ -12,7 +12,7 @@ export const NavBar = () => {
             <p>ECOMMERCE</p>
         </div>
         <ul className="nav-menu">
-            <li onClick={()=>{setMenu("tienda")}}><Link style={{textDecoration: 'none'}} to="/">Tienda</Link>{menu==="tienda"?<hr />:<></>}</li>
+            <li onClick={()=>{setMenu("tienda")}}><Link  to="/">Tienda</Link>{menu==="tienda"?<hr />:<></>}</li>
             <li onClick={()=>{setMenu("niños")}}><Link to="/niños">Niños</Link>{menu==="niños"?<hr />:<></>}</li>
             <li onClick={()=>{setMenu("niñas")}}><Link to="/niñas">Niñas</Link>{menu==="niñas"?<hr />:<></>}</li>
             <li onClick={()=>{setMenu("accesorios")}}><Link to="/accesorios">Accesorios</Link>{menu==="accesorios"?<hr />:<></>}</li>
