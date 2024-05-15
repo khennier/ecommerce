@@ -1,0 +1,35 @@
+.newcollections {
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 0 20px; /* Margen interno de 20px a cada lado */
+    height: auto; /* Eliminamos la altura fija */
+    background: linear-gradient(180deg, #bac0cb72, #ffffff); /* Degradado gris */
+  }
+  
+  .newcollections h1 {
+    color: #171717;
+    font-size: 50px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 100px;
+  }
+  
+  .newcollections hr {
+    width: 100%;
+    max-width: 200px;
+    height: 6px;
+    border-radius: 10px;
+    background: #252525;
+    margin: 20px 0;
+  }
+  
+  .collections {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+  
