@@ -3,6 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 80px;
     gap: 50px;
 }
 
@@ -40,8 +41,7 @@
 .footer-icons-container {
     padding: 10px;
     padding-bottom: 6px;
-    background: #aaa9a9;
-    border: 1px solid #6d6c6c
+    background: #ffffff;
 }
 
 .footer-copyright {
