@@ -1,0 +1,95 @@
+.loginpage {
+    width: 100%;
+    height: 100vh;
+    background: #f6f7f7; /* Color de fondo suave y atractivo */
+    padding-top: 100px;
+}
+
+.loginpage-container {
+    width: 580px;
+    height: auto; /* Ajustado para adaptarse al contenido */
+    background: white;
+    margin: auto;
+    padding: 40px 60px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Añadido para dar un poco de profundidad */
+    border-radius: 10px; /* Bordes redondeados para un diseño más moderno */
+}
+
+.loginpage-container h1 {
+    margin: 20px 0px;
+    color: #333; /* Un color de texto que contraste bien */
+    text-align: center; /* Centrar el texto del título */
+}
+
+.loginpage-fields {
+    display: flex;
+    flex-direction: column;
+    gap: 29px;
+    margin-top: 30px;
+}
+
+.loginpage-fields input[type="text"],
+.loginpage-fields input[type="email"],
+.loginpage-fields input[type="password"] {
+    padding: 15px;
+    border: 1px solid #ccc; /* Bordes sutiles */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 16px; /* Tamaño de fuente mayor para mejor legibilidad */
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05); /* Añadir un efecto sutil de sombra interna */
+    transition: border-color 0.3s, box-shadow 0.3s; /* Transiciones suaves */
+}
+
+.loginpage-fields input[type="text"]:focus,
+.loginpage-fields input[type="email"]:focus,
+.loginpage-fields input[type="password"]:focus {
+    border-color: #888; /* Color de borde al enfocar */
+    box-shadow: 0 0 8px rgba(0, 136, 204, 0.3); /* Sombra adicional al enfocar */
+    outline: none; /* Eliminar el borde de enfoque predeterminado */
+}
+
+.loginpage-fields button {
+    padding: 15px;
+    border: none;
+    border-radius: 5px; /* Bordes redondeados */
+    background-color: #a7a8a9; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    font-size: 16px; /* Tamaño de fuente mayor para mejor legibilidad */
+    cursor: pointer; /* Cambiar el cursor al pasar por encima */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Transiciones suaves */
+}
+
+.loginpage-fields button:hover {
+    background-color: #4b68d1; /* Color de fondo al pasar por encima */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Añadir sombra al pasar por encima */
+}
+
+.loginpage-fields button:active {
+    background-color: #4059b5; /* Color de fondo al hacer clic */
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra interna al hacer clic */
+}
+
+.loginpage-login {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.loginpage-login span {
+    color: #929292;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.loginpage-agree {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.loginpage-agree input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.loginpage-agree p {
+    font-size: 14px;
+}
+
