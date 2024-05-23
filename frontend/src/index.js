@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom'; // Corregir la importación de ReactDOM
+import ReactDOM from 'react-dom/client'; // Corregir la importación de ReactDOM
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
