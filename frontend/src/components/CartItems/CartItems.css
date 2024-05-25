@@ -1,0 +1,78 @@
+.cartitems {
+    width: 90%;
+    margin: 30px auto;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Poppins';
+    font-weight: 600;
+}
+
+.cartitems-format-main,
+.cartitems-format {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    padding: 10px 0;
+}
+
+.cartitems-format-main {
+    font-weight: bold;
+    color: #171717;
+    font-size: 18px;
+}
+
+.cartitems-format {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.cartitem-product-icon {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.cartitems-quantity {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.cartitems-quantity button {
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #ededed;
+    color: #787878;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.cartitems-quantity span {
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f6f6f6;
+    font-size: 16px;
+}
+
+.cartitem-remove-icon {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.cartitems-total {
+    font-size: 20px;
+    font-weight: 600;
+    color: #171717;
+}

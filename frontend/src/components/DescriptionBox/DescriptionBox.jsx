@@ -13,7 +13,12 @@ export const DescriptionBox = () => {
             </div>
         </div>
         <div className="descriptionbox-description">
-            
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor ut ea voluptates laudantium autem aspernatur, sapiente ipsa a molestias nobis incidunt minima, reiciendis consequuntur et totam ullam unde nulla quod.
+            </p>
+            <p>
+                
+            </p>
         </div>
     </div>
   )
