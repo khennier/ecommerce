@@ -1,6 +1,6 @@
 .item {
     width: 350px;
-
+    transition: transform 0.6s; /* Mueve la transición aquí para que se aplique siempre */
 }
 .item p {
     margin: 6px 0px;
@@ -23,5 +23,38 @@
 }
 .item:hover {
     transform: scale(1.05);
-    transition: 0.6s;
+}
+
+/* Media query para tablets */
+@media (max-width: 768px) {
+    .item {
+        width: 100%; /* Ajustar el ancho a 100% del contenedor */
+        margin: 10px 0; /* Añadir margen para separar los elementos */
+    }
+
+    .item-price-new, .item-price-old {
+        font-size: 16px; /* Reducir el tamaño de fuente para tablets */
+    }
+}
+
+/* Media query para móviles */
+@media (max-width: 480px) {
+    .item {
+        width: 100%; /* Ajustar el ancho a 100% del contenedor */
+        margin: 10px 0; /* Añadir margen para separar los elementos */
+    }
+
+    .item p {
+        margin: 4px 0px; /* Reducir el margen */
+        font-size: 14px; /* Reducir el tamaño de fuente de los párrafos */
+    }
+
+    .item-prices {
+        flex-direction: column; /* Cambiar a dirección de columna */
+        gap: 10px; /* Reducir el espacio entre precios */
+    }
+
+    .item-price-new, .item-price-old {
+        font-size: 14px; /* Reducir el tamaño de fuente para móviles */
+    }
 }

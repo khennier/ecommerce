@@ -3,6 +3,9 @@
     height: 100vh;
     background: #f6f7f7; /* Color de fondo suave y atractivo */
     padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .loginpage-container {
@@ -59,12 +62,12 @@
 }
 
 .loginpage-fields button:hover {
-    background-color: #4b68d1; /* Color de fondo al pasar por encima */
+    background-color: #ff4141; /* Color de fondo al pasar por encima */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Añadir sombra al pasar por encima */
 }
 
 .loginpage-fields button:active {
-    background-color: #4059b5; /* Color de fondo al hacer clic */
+    background-color: #ff4141; /* Color de fondo al hacer clic */
     box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra interna al hacer clic */
 }
 
@@ -93,3 +96,48 @@
     font-size: 14px;
 }
 
+/* Media query para tabletas */
+@media (max-width: 768px) {
+    .loginpage-container {
+        width: 80%; /* Ajustar el ancho */
+        padding: 30px; /* Ajustar el relleno */
+    }
+
+    .loginpage-container h1 {
+        font-size: 28px; /* Reducir el tamaño de fuente del título */
+    }
+
+    .loginpage-fields input[type="text"],
+    .loginpage-fields input[type="email"],
+    .loginpage-fields input[type="password"] {
+        font-size: 14px; /* Reducir el tamaño de fuente de los inputs */
+    }
+
+    .loginpage-fields button {
+        font-size: 14px; /* Reducir el tamaño de fuente del botón */
+        padding: 12px; /* Ajustar el relleno */
+    }
+}
+
+/* Media query para teléfonos */
+@media (max-width: 480px) {
+    .loginpage-container {
+        width: 90%; /* Ajustar el ancho */
+        padding: 20px; /* Ajustar el relleno */
+    }
+
+    .loginpage-container h1 {
+        font-size: 24px; /* Reducir el tamaño de fuente del título */
+    }
+
+    .loginpage-fields input[type="text"],
+    .loginpage-fields input[type="email"],
+    .loginpage-fields input[type="password"] {
+        font-size: 12px; /* Reducir el tamaño de fuente de los inputs */
+    }
+
+    .loginpage-fields button {
+        font-size: 12px; /* Reducir el tamaño de fuente del botón */
+        padding: 10px; /* Ajustar el relleno */
+    }
+}

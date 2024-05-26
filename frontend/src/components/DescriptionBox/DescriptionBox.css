@@ -4,9 +4,10 @@
 
 .descriptionbox-navigator {
     display: flex;
+    flex-wrap: wrap; /* Permitir que los elementos se envuelvan */
 }
 
-.descriptionbox-nav-box{
+.descriptionbox-nav-box {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -15,9 +16,10 @@
     width: 171px;
     height: 70px;
     border: 1px solid #d0d0d0;
+    box-sizing: border-box; /* Asegurar que el padding y el borde se incluyan en el tamaño total del elemento */
 }
 
-.descriptionbox-nav-box.fade{
+.descriptionbox-nav-box.fade {
     background: #fbfbfb;
     color: #555;
 }
@@ -29,7 +31,45 @@
     border: 1px solid #d0d0d0;
     padding: 48px;
     padding-bottom: 70px;
-
-
 }
 
+/* Media query para tablets */
+@media (max-width: 768px) {
+    .descriptionbox {
+        margin: 60px 20px; /* Ajustar el margen para tablets */
+    }
+
+    .descriptionbox-navigator {
+        justify-content: space-around; /* Distribuir uniformemente los elementos en tablets */
+    }
+
+    .descriptionbox-nav-box {
+        width: 100%; /* Ocupa el ancho completo en tablets */
+        margin-bottom: 10px; /* Añadir un margen inferior entre los elementos */
+    }
+
+    .descriptionbox-description {
+        padding: 30px; /* Reducir el padding para tablets */
+    }
+}
+
+/* Media query para móviles */
+@media (max-width: 480px) {
+    .descriptionbox {
+        margin: 30px 10px; /* Ajustar el margen para móviles */
+    }
+
+    .descriptionbox-navigator {
+        flex-direction: column; /* Disposición en columna para móviles */
+        align-items: center; /* Centrar los elementos en móviles */
+    }
+
+    .descriptionbox-nav-box {
+        width: 100%; /* Ocupa el ancho completo en móviles */
+        margin-bottom: 10px; /* Añadir un margen inferior entre los elementos */
+    }
+
+    .descriptionbox-description {
+        padding: 20px; /* Reducir el padding para móviles */
+    }
+}

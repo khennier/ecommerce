@@ -1,7 +1,6 @@
 .shopcategory-banner {
-    display: block;
-    margin: 30px auto;
-    width: 82%;
+    width: 100%;
+    height: auto;
 }
 
 .shopcategory-indexSort {
@@ -24,7 +23,9 @@
 }
 
 .shopcategory-products {
-    margin: 20px;
+    width: 100%;
+    height: auto;
+    margin: 20px auto; /* Centrar los productos */
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Corregido el formato de la propiedad grid-template-columns */
     gap: 80px; /* Cambiado de row-gap a gap */
@@ -43,5 +44,62 @@
     color: #787878;
     font-size: 18px;
     font-weight: 500;
+}
 
+/* Ocultar banner en pantallas de 1024px o menos */
+@media (max-width: 1024px) {
+    .shopcategory-banner {
+        width: 100%;
+        height: auto;
+    }
+
+    .shopcategory-products {
+        grid-template-columns: repeat(2, 1fr); /* Dos columnas para pantallas de 1024px o menos */
+        max-width: 800px; /* Añadir un ancho máximo */
+        margin: 0 auto; /* Centrar los productos */
+    }
+}
+
+/* Media query para tablets */
+@media (max-width: 768px) {
+    .shopcategory-indexSort {
+        flex-direction: column; /* Cambiar a columna */
+        align-items: flex-start; /* Alinear al inicio */
+        gap: 20px; /* Espacio entre elementos */
+    }
+
+    .shopcategory-products {
+        grid-template-columns: 1fr; /* Una columna para tablets y móviles */
+        gap: 40px; /* Reducir el espacio entre productos */
+        max-width: 500px; /* Añadir un ancho máximo */
+        margin: 0 auto; /* Centrar los productos */
+    }
+
+    .shopcategory-loadmore {
+        width: 200px; /* Reducir el ancho del botón */
+        height: 60px; /* Reducir la altura del botón */
+        font-size: 16px; /* Reducir el tamaño de la fuente */
+    }
+}
+
+/* Media query para móviles */
+@media (max-width: 480px) {
+    .shopcategory-indexSort {
+        padding: 0 10px; /* Reducir el padding */
+        gap: 15px; /* Reducir el espacio entre elementos */
+    }
+
+    .shopcategory-products {
+        grid-template-columns: 1fr; /* Una columna para móviles */
+        gap: 20px; /* Reducir el espacio entre productos */
+        max-width: 100%; /* Ocupa todo el ancho disponible */
+        padding: 0 10px; /* Añadir un padding lateral */
+        margin: 0 auto; /* Centrar los productos */
+    }
+
+    .shopcategory-loadmore {
+        width: 150px; /* Reducir aún más el ancho del botón */
+        height: 50px; /* Reducir aún más la altura del botón */
+        font-size: 14px; /* Reducir aún más el tamaño de la fuente */
+    }
 }

@@ -54,3 +54,42 @@
     cursor: pointer;
 
 }
+
+@media (max-width: 1024px) {
+    .newsletter h1 {
+        text-align: center;
+    }
+}
+
+
+/* Media query para dispositivos móviles */
+@media (max-width: 768px) {
+    .newsletter {
+        height: auto; /* Cambiar la altura a automática */
+        padding: 20px; /* Añadir relleno */
+        gap: 20px; /* Reducir el espacio entre elementos */
+        margin-top: 50px; /* Reducir el margen superior */
+    }
+
+    .newsletter h1 {
+        font-size: 40px; /* Reducir el tamaño del título */
+        text-align: center; /* Centrar el texto */
+    }
+
+    .newsletter div {
+        width: 100%; /* Ajustar el ancho al 100% */
+        max-width: 500px; /* Establecer un ancho máximo */
+    }
+
+    .newsletter input {
+        width: calc(100% - 80px); /* Ajustar el ancho del input */
+        max-width: 400px; /* Establecer un ancho máximo */
+        margin-left: 20px; /* Reducir el margen izquierdo */
+    }
+
+    .newsletter div button {
+        width: calc(100% - 40px); /* Ajustar el ancho del botón */
+        max-width: 200px; /* Establecer un ancho máximo */
+        margin-left: 20px; /* Reducir el margen izquierdo */
+    }
+}

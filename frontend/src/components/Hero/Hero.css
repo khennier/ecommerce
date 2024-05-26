@@ -50,3 +50,75 @@
     font-weight: 500;
 }
 
+.hero-right {
+    width: auto;
+    height: auto;
+}
+
+/* MEDIA QUERY PARA TABLES */
+
+/* Media query para dispositivos de tableta */
+@media (max-width: 1024px) {
+    .hero-left {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20;
+        padding-left: 90px;
+        line-height: 1.1;
+    }
+    .hero-left h2 {
+        color: #090909;
+        font-size: 26px;
+        font-weight: 600;
+    }
+    
+    .hero-left p {
+        color: #171717;
+        font-size: 100px;
+        font-weight: 700;
+    
+    }
+
+
+
+    .hero-right {
+        display: none; /* Oculta la imagen .hero-right */
+    }
+}
+
+
+/* Media query para dispositivos móviles */
+@media (max-width: 767px) {
+    .hero {
+        flex-direction: column; /* Cambio a disposición de columna */
+        justify-content: center; /* Centrar verticalmente */
+        align-items: center; /* Centrar horizontalmente */
+    }
+
+    .hero-left {
+        padding: 0 20px; /* Ajuste del padding */
+        text-align: center; /* Centrado del texto */
+    }
+
+    .hero-left p {
+        width: 60px;
+        font-size: 40px; /* Reducción del tamaño de fuente */
+    }
+
+    .hero-hand-icon img {
+        width: 60px; /* Reducción del tamaño de la imagen */
+    }
+
+    .hero-latest-btn {
+        min-width: auto; /* Eliminación del ancho mínimo */
+        width: 80%; /* Ancho máximo */
+        height: 50px; /* Reducción de la altura */
+        font-size: 16px; /* Reducción del tamaño de fuente */
+        border-radius: 25px; /* Ajuste del radio de borde */
+    }
+    .hero-right {
+        display: none;
+    }
+}

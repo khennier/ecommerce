@@ -8,3 +8,22 @@
     margin: 60px 170px;
     text-transform: capitalize;
 }
+
+/* Media query para tablets */
+@media (max-width: 768px) {
+    .breadcrum {
+        margin: 40px 40px; /* Ajustar el margen para tablets */
+        font-size: 14px; /* Reducir el tamaño de fuente para tablets */
+        gap: 6px; /* Reducir el espacio entre los elementos */
+    }
+}
+
+/* Media query para móviles */
+@media (max-width: 480px) {
+    .breadcrum {
+        margin: 20px 20px; /* Ajustar el margen para móviles */
+        font-size: 12px; /* Reducir aún más el tamaño de fuente para móviles */
+        gap: 4px; /* Reducir el espacio entre los elementos */
+        flex-wrap: wrap; /* Permitir que los elementos se envuelvan en líneas nuevas */
+    }
+}

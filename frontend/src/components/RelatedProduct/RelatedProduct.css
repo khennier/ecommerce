@@ -30,6 +30,10 @@
 
 /* Estilos para tablets */
 @media (max-width: 768px) {
+    .relatedproducts{
+        align-items: center;
+        margin-left: 20%;
+    }
     .relatedproducts h1 {
         font-size: 26px;
     }
@@ -39,7 +43,7 @@
     }
 
     .relatedproducts-item img {
-        width: 80px; /* Ajustar el tamaño de la imagen */
+        width: 50%; /* Ajustar el tamaño de la imagen */
         height: auto;
     }
 

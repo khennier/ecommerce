@@ -5,6 +5,7 @@
     align-items: center;
     padding-top: 80px;
     gap: 50px;
+    align-items: center;
 }
 
 .footer-logo {
@@ -61,4 +62,13 @@
     border-radius: 10px;
     height: 3px;
     background: #575656;
+}
+
+/* Media query para dispositivos móviles */
+@media (max-width: 768px) {
+    .footer-links {
+        flex-direction: column; /* Cambiar a dirección de columna */
+        gap: 20px; /* Añadir espacio entre elementos */
+        text-align: center; /* Centrar el texto */
+    }
 }
