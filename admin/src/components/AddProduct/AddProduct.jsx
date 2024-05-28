@@ -38,10 +38,12 @@ export const AddProduct = () => {
             if (responseData.success) {
                 product.image = responseData.image_url;
                 console.log(product);
+                alert("Producto cargado correctamente")
                 // Aquí puedes realizar una segunda solicitud para agregar el producto a la base de datos
                 await fetch('http://localhost:4000/addproduct', {
                     method: 'POST',
                     headers: {
+                        Accept:'application/json',
                         'Content-Type': 'application/json',
                     },
                     body: JSON.stringify(product),

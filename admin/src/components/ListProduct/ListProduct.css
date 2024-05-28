@@ -1,0 +1,138 @@
+/* ListProduct.css */
+
+.listproduct {
+    padding: 20px;
+    width: calc(100% - 260px); /* Assuming the sidebar is 250px wide with 10px margin */
+    box-sizing: border-box;
+    background-color: #f8f9fa; /* Light background for the main content */
+}
+
+.listproduct h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #ff4141; /* Blue background for the heading */
+    padding: 15px;
+    border-radius: 8px;
+    color: white; /* White text color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add some shadow for a nice effect */
+}
+
+.listproducts-format-main, .listproduct-format-main {
+    display: grid;
+    grid-template-columns: 100px 2fr 1fr 1fr 1fr 50px;
+    align-items: center;
+    background-color: #e9ecef; /* Light grey background for the grid header */
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    color: #495057; /* Dark text color */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow to each item */
+}
+
+.listproduct-format-main {
+    background-color: white; /* White background for the product rows */
+}
+
+.listproduct-format-main:nth-child(even) {
+    background-color: #f1f3f5; /* Alternating row color */
+}
+
+.listproduct-product-icon {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.listproduct-remove-icon {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.listproduct-remove-icon:hover {
+    transform: scale(1.1); /* Slightly enlarge the icon on hover */
+}
+
+.listproduct-allproducts {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: white; /* White background for the product list container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add some shadow for a nice effect */
+}
+
+@media (max-width: 1024px) {
+    .listproduct {
+        width: 100%; /* Adjust width for tablets */
+        padding: 10px;
+    }
+
+    .listproducts-format-main, .listproduct-format-main {
+        grid-template-columns: 80px 1.5fr 1fr 1fr 1fr 40px;
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .listproduct-product-icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .listproduct-remove-icon {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    .listproducts-format-main, .listproduct-format-main {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        grid-row-gap: 10px;
+    }
+
+    .listproducts-format-main > p,
+    .listproduct-format-main > p {
+        text-align: center;
+    }
+
+    .listproduct-product-icon {
+        grid-column: span 2;
+        margin: auto;
+    }
+
+    .listproduct-remove-icon {
+        grid-column: span 2;
+        margin: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .listproduct {
+        padding: 10px;
+    }
+
+    .listproduct h1 {
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    .listproducts-format-main, .listproduct-format-main {
+        grid-template-columns: 1fr;
+        text-align: center;
+        padding: 8px;
+        font-size: 12px;
+    }
+
+    .listproduct-product-icon {
+        width: 100%;
+        height: auto;
+    }
+
+    .listproduct-remove-icon {
+        width: 20px;
+        height: 20px;
+    }
+}

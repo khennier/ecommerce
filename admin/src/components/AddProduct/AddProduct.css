@@ -61,6 +61,17 @@
     font-weight: 500;
 }
 
+.addproduct-message {
+    margin-top: 10px;
+    font-size: 16px;
+    color: green;
+}
+
+.addproduct-message.error {
+    color: red;
+}
+
+
 @media (max-width: 768px) {
     .addproduct {
         width: auto;
